@@ -1,10 +1,9 @@
-*{
+
+body{
+    margin: 0 auto;
     list-style: none;
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-body{
-    margin: 0 auto;
 }
 /* Haut de page */
 header.header{
@@ -323,6 +322,122 @@ a.blue:hover{
     }
 }
 
+/* Responsive 300px -> 338px */
+@media screen and (max-width: 338px) and (min-width: 300px) {
+    *{
+        margin: 0;
+    }
+    /* a.scroll{
+        display: none;
+    } */
+    header.header .menu-hamburger{
+        display: block;
+        position: absolute;
+        top: 75px;
+        right: 45px;
+    }
+    .links {
+        position: absolute;
+        background-color: rgba(124, 124, 124, 0.71);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        top: 0;
+        left: 400px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease-out;
+    }
+    .links.open{
+        margin-left: -400px;
+    }
+    .nav .links li{
+        margin: 25px 0;
+        font-size: 25px;
+    }
+    header.header img{
+        position: relative;
+        top: 20px;
+        width: 100px;
+    }
+    section.haut-page{
+        background-size: 1100px;
+        width: 100%;
+        height: 100vh
+    }
+    .bienvenue{
+        font-size: 27px;
+    }
+    a.scroll{
+        font-size: 60px;
+        left: 20px;
+    }
+}
+
+/* Responsive 338px -> 380px */
+@media screen and (max-width: 380px) and (min-width: 338px) {
+    *{
+        margin: 0;
+    }
+    /* a.scroll{
+        display: none;
+    } */
+    header.header .menu-hamburger{
+        display: block;
+        position: absolute;
+        top: 75px;
+        right: 45px;
+    }
+    .links {
+        position: absolute;
+        background-color: rgba(124, 124, 124, 0.71);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        top: 0;
+        left: 400px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease-out;
+    }
+    .links.open{
+        margin-left: -400px;
+    }
+    .nav .links li{
+        margin: 25px 0;
+        font-size: 25px;
+    }
+    header.header img{
+        position: relative;
+        top: 20px;
+        width: 100px;
+    }
+    section.haut-page{
+        background-size: 1100px;
+        width: 100%;
+        height: 100vh
+    }
+    .bienvenue{
+        font-size: 27px;
+    }
+    a.scroll{
+        font-size: 60px;
+        left: 20px;
+    }
+    
+}
+@media screen and (max-width: 380px) and (min-width: 338px){
+    section.about-section {
+        padding: 90px;
+        background-image: url('images/bureau-gris.webp');
+        background-size: 1000px;
+        text-align: center;
+    }
+}
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------- */
 h1 {
     color: white;
